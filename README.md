@@ -33,12 +33,12 @@ MacOS users need to build from the source code to install the AgensGraph.
 
 In part 2 of this hands-on session, you need to use three schema of the Unibench benchmark, including M3D (Multi-Model, MultiDimensional) schema, FR (Full Relational) schema, and NR (Non-Relational) schema. Note that part 1 (transaction processing) does not need to use Unibench.
 
-**Dowanload the dmp file:** Please download the dataset from [this link](https://github.com/big-unibo/m3d). Click "here" in the "Loading the data" section (see the following figure) to download the compressed dump file of the database.
+**Download the dmp file:** Please download the dataset from [this link](https://github.com/big-unibo/m3d). Click "here" in the "Loading the data" section (see the following figure) to download the compressed dump file.
 
 ![image](https://github.com/ZhengtongYan/-Hands-on-Session-2-of-DW-BI-Course/blob/main/Dataset.PNG)
 
 
-For more details about these three schemas of Unibench, please refer to paper 2 in the references section.
+For more details about these three schemas of Unibench, please read Paper 2 in the references section.
 
 
 ## **References**
