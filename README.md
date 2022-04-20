@@ -6,7 +6,7 @@
 ## **Learning Objectives**
 Gain hands-on experience in transaction processing and multi-model OLAP analysis using AgensGraph.
 - Learn how to perform transaction processing in AgensGraph;
-- Learn how write multi-model OLAP queries in AgensGraph.
+- Learn how tp write multi-model OLAP queries in AgensGraph.
 
 
 ## **Software Requirements**
