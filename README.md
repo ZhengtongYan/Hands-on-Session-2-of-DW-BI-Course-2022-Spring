@@ -191,14 +191,14 @@ order by vendor.
 
 
 
-## **(Optional) Part3: Bouns of Multi-Model OLAP Analysis (Maximum: 5 points)**
-In this part, you can get an extra bouns by designing at most five different multi-model OLAP questions and give the M3D query for each question. 
+## **(Optional) Part3: Bonus of Multi-Model OLAP Analysis (Maximum: 5 points)**
+In this part, you can get an extra bonus of points by designing at most five different multi-model OLAP questions and give the M3D query for each question. 
 
 Requirments: 
-- The queries should not be included in Paper 2 and Part 2. This means you cannot simiply modify some parameters of the queries in paper 2. Instead, you need to design queries that have different descriptions and semantics.
+- The queries should not be included in Paper 2. This means you cannot simiply modify some parameters of the queries in paper 2. Instead, you need to design queries that have different descriptions and semantics.
 - Each query should be complex enough and consists of <font color=red>at least</font> four different data models (R, JSON, Graph, XML, KV). Simple queries cannot get the points.
-- Please give the description of each query;
-- Please show the involved data models in each query;
+- Please give the description of each query.
+- Please show the involved data models in each query.
 - You ONLY need to give the M3D query format. You DO NOT need to give the FR and NR query formats.
 
 Please refer to Table 1 and Table 2 in Paper 2 (WL1 and WL2 OLAP workload for Unibench) to design the queries.
