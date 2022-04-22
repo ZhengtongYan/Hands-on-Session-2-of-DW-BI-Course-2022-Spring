@@ -74,9 +74,28 @@ For more details about these three schemas of Unibench, please read Paper 2 in t
 
 ## **Part1: Transaction Processing (5 points)**
 
+#### **Initialize demo database**
+```SQL
+CREATE TABLE "accounts" (
+  "id" bigserial PRIMARY KEY,
+  "owner" varchar NOT NULL,
+  "balance" bigint NOT NULL,
+  "currency" varchar NOT NULL,
+  "createdat" timestamptz NOT NULL DEFAULT (now())
+);
+```
+
+```SQL
+INSERT INTO accounts (owner, balance, currency)
+VALUES
+  ('AA', 100, 'EUR'),
+  ('BB', 100, 'EUR'),
+  ('CC', 100, 'EUR');
+```
+
 **1. Read Phenomena and Isolation Levels**
 
-Consider a situation where the balance of a account (id=1) is initially 100 and two users simultaneously execute commands within transactions in AgensGraph:
+Consider a situation where the balance of AA's account (id=1) is initially 100 and two users simultaneously execute commands within transactions in AgensGraph:
 
 
 | Transaction 1 (user 1) | Transaction 2 (user 2)| 
@@ -99,7 +118,7 @@ Consider a situation where the balance of a account (id=1) is initially 100 and 
 
    (4) At the <font color=blue>READ UNCOMMITTED</font> level, what results the user 1 can get from the two queries if the transactions are executed in MySQL instead of AgensGraph? What read phenomenon occur? (Hint: In AgensGraph, READ UNCOMMITTED is treated as READ COMMITTED. But in MySQL, READ UNCOMMITTED is different from READ COMMITTED.) (1 point)
 
-**4. Locks and Deadlock**
+**2. Locks and Deadlock**
 
 （1）What kinds of locks do the following two transactions try to generate in AgensGraph? Whether the two locks are conflicting or not? Will the records in the *accounts* table be deleted by the truncate command? (0.5 point)
 
@@ -189,4 +208,3 @@ Please refer to Table 1 and Table 2 in Paper 2 (WL1 and WL2 OLAP workload for Un
 - Post the queries and demonstrate the results.
 - Please upload all the solutions in a single PDF file.
 - Please submit to Moodle page and the deadline is **May 12th, 2022**.
-
