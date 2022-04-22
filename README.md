@@ -76,7 +76,7 @@ For more details about these three schemas of Unibench, please read Paper 2 in t
 
 **1. Read Phenomena and Isolation Levels**
 
-Consider a situation where the balance of AA's account (id=1) is initially 100 and two users simultaneously execute commands within transactions in AgensGraph:
+Consider a situation where the balance of a account (id=1) is initially 100 and two users simultaneously execute commands within transactions in AgensGraph:
 
 
 | Transaction 1 (user 1) | Transaction 2 (user 2)| 
