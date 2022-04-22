@@ -72,7 +72,7 @@ For more details about these three schemas of Unibench, please read Paper 2 in t
 ## **Exercises (20 points)**
 
 
-### **Part1: Transaction Processing (5 points)**
+## **Part1: Transaction Processing (5 points)**
 
 #### **Initialize demo database**
 ```SQL
@@ -147,7 +147,7 @@ Consider a situation where the balance of AA's account (id=1) is initially 100 a
 
 
 
-### **Part2: Multi-Model OLAP Analysis (Total: 15 points)**
+## **Part2: Multi-Model OLAP Analysis (Total: 15 points)**
 
 
 Import the downloaded file "m3d.dmp" into AgensGraph using pg_restore command. Refer to this link about [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) command.
@@ -191,7 +191,7 @@ order by vendor.
 
 
 
-### **(Optional) Part3: Bouns of Multi-Model OLAP Analysis (Maximum: 5 points)**
+## **(Optional) Part3: Bouns of Multi-Model OLAP Analysis (Maximum: 5 points)**
 In this part, you can get an extra bouns by designing at most five different multi-model OLAP questions and give the M3D query for each question. 
 
 Requirments: 
