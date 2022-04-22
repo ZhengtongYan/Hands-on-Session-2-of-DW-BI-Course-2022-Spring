@@ -74,25 +74,6 @@ For more details about these three schemas of Unibench, please read Paper 2 in t
 
 ## **Part1: Transaction Processing (5 points)**
 
-#### **Initialize demo database**
-```SQL
-CREATE TABLE "accounts" (
-  "id" bigserial PRIMARY KEY,
-  "owner" varchar NOT NULL,
-  "balance" bigint NOT NULL,
-  "currency" varchar NOT NULL,
-  "createdat" timestamptz NOT NULL DEFAULT (now())
-);
-```
-
-```SQL
-INSERT INTO accounts (owner, balance, currency)
-VALUES
-  ('AA', 100, 'EUR'),
-  ('BB', 100, 'EUR'),
-  ('CC', 100, 'EUR');
-```
-
 **1. Read Phenomena and Isolation Levels**
 
 Consider a situation where the balance of AA's account (id=1) is initially 100 and two users simultaneously execute commands within transactions in AgensGraph:
