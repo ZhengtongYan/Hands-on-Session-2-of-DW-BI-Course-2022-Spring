@@ -186,9 +186,10 @@ Please read paper 2 and refer to this [Github](https://github.com/big-unibo/m3d)
 **Q4:** Total price by customer for a given vendor (vendorname='Mugen_Motorsports')
 and period (2018-2020).
 
-**Q5:** Total price by vendor for the top 3 customers,
-order by vendor.
+**Q5:** Total price by vendor for the top 3 customers, order by vendor.*
 
+
+**Tips:** Please set the graph_path (SET graph_path = unibench_graph;) before you conduct any Cypher queries.
 
 
 ## **(Optional) Part3: Bonus of Multi-Model OLAP Analysis (Maximum: 5 points)**
