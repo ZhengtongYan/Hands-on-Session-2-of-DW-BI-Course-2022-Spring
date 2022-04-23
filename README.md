@@ -2,6 +2,9 @@
 
 **This repository contains the instructions of the second hands-on session in our DW&BI course.**
 
+## **Recording Video**
+[Hands-on Session 2 of Data Warehousing and Business Intelligence Course](https://www.youtube.com/watch?v=IHAsgTs15RY)
+
 
 ## **Learning Objectives**
 Gain hands-on experience in transaction processing and multi-model OLAP analysis using AgensGraph.
