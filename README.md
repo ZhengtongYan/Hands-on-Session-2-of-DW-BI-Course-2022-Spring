@@ -31,7 +31,7 @@ MacOS users need to build from the source code to install the AgensGraph.
 
 ## **Download the Dataset**
 
-In part 2 of this hands-on session, you need to use three schema of the Unibench benchmark, including M3D (Multi-Model, MultiDimensional) schema, FR (Full Relational) schema, and NR (Non-Relational) schema. Note that part 1 (transaction processing) does not need to use Unibench.
+In part 2 of this hands-on session, you need to use three schema of the Unibench benchmark, including M3D (Multi-Model MultiDimensional) schema, FR (Full-Relational) schema, and NR (Non-Relational) schema. Note that part 1 (transaction processing) does not need to use this dataset.
 
 **Download the dmp file:** Please download the dataset from [this link](https://github.com/big-unibo/m3d). Click "here" in the "Loading the data" section (see the following figure) to download the compressed dump file (m3d.dmp).
 
@@ -159,7 +159,7 @@ CREATE GRAPH unibench_graph;
 SET graph_path = unibench_graph;
 ```
 
-**Step 2:** Open a new terminal and change the directory of "m3d.dmp" file, then input the following command to import the "m3d.dmp" dataset:
+**Step 2:** Open a new terminal and change the directory to the one of "m3d.dmp" file, then input the following command to import the "m3d.dmp" dataset:
 ```SQL
 pg_restore -d unibench_m3d -U agens -O -w -v m3d.dmp
 ```
@@ -171,7 +171,7 @@ pg_restore -d unibench_m3d -U agens -O -w -v /home/dw/m3d.dmp
 **Notice:** You may see some errors about the <font color=red>pg_dropcache</font> EXTENSION, just ignore these errors because pg_dropcache is only an extension of PostgreSQL for invalidating shared_buffers cache, so it does not affect the imported results.
 
 After importing the dataset, please complete the following 5 questions: Q1-Q5. For each question, you need to write three kinds of queries (FR, NR, and M3D) to answer the same question. Make sure that the three queries for the same question can get the same results. 
-- FR: Full-Relation query is based on the FR schema;
+- FR: Full-Relational query is based on the FR schema;
 - NR: Non-Relational query is based on the NR schema;
 - M3D: Multi-Model Multidimensional query is based on the M3D schema.
 
@@ -179,23 +179,22 @@ Please read paper 2 and refer to this [Github](https://github.com/big-unibo/m3d)
 
 **Q1:** Number of orders by year.
 
-**Q2:**  Number of orders by customer rating for a given product (asin='B0007QCO4M').
+**Q2:** Number of orders by customer rating for a given product (asin='B005SSWKMK').
 
-**Q3:** Number of orders by a customer's 2-degree (2 hops) friends. The idcust of the customer is 4145.
+**Q3:** Number of orders by a customer's 2-degree friends (2 hops). Only return the top 5 numbers. The idcust of the customer is 4145.
 
-**Q4:** Total price by customer for a given vendor (vendorname='Mugen_Motorsports')
-and period (2018-2020).
+**Q4:** Total price by customer for a given vendor (vendorname='Mugen_Motorsports') and period (2018-2020). Only return the top 10 total prices.
 
-**Q5:** Total price by vendor for the top 3 customers, order by vendor.*
+**Q5:** Total price by vendorname for the top 3 customers, order by vendorname.
 
 
-**Tips:** Please set the graph_path (SET graph_path = unibench_graph;) before you conduct any Cypher queries.
+**Tips:** Remember to set the graph_path (SET graph_path = unibench_graph) before performing Cypher queries on the graph.
 
 
 ## **(Optional) Part3: Bonus of Multi-Model OLAP Analysis (Maximum: 5 points)**
-In this part, you can get an extra bonus of points by designing at most five different multi-model OLAP questions and give the M3D query for each question. 
+In this part, you can get an extra bonus of points by designing at most five different multi-model OLAP questions (1 point for each question) and give the M3D query for each question. 
 
-Requirments: 
+**Requirements:** 
 - The queries should not be included in Paper 2. This means you cannot simiply modify some parameters of the queries in paper 2. Instead, you need to design queries that have different descriptions and semantics.
 - Each query should be complex enough and consists of <font color=red>at least</font> four different data models (R, JSON, Graph, XML, KV). Simple queries cannot get the points.
 - Please give the description of each query.
