@@ -186,6 +186,8 @@ Please read paper 2 and refer to this [Github](https://github.com/big-unibo/m3d)
 
 **Q3:** Number of orders by a customer's 2-degree friends (2 hops). Only return the top 5 numbers. The idcust of the customer is 4145.
 
+&#x1F4D7; **Statement: In Q3, the FR query will return more rows than that of NR and M3D queries. This is becasue the dataset has some problems in building the konws graph.
+
 **Q4:** Total price by customer for a given vendor (vendorname='Mugen_Motorsports') and period (2018-2020). Only return the top 10 total prices.
 
 **Q5:** Total price by vendorname for the top 3 customers, order by vendorname.
