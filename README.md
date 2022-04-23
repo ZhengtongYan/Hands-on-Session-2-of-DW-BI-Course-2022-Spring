@@ -192,7 +192,7 @@ Please read paper 2 and refer to this [Github](https://github.com/big-unibo/m3d)
 
 
 ## **(Optional) Part3: Bonus of Multi-Model OLAP Analysis (Maximum: 5 points)**
-In this part, you can get an extra bonus of points by designing at most five different multi-model OLAP questions (1 point for each question) and give the M3D query for each question. 
+In this part, you can get an extra bonus of points by designing at most five different multi-model OLAP questions (1 point for each question) and giving the M3D query for each question. 
 
 **Requirements:** 
 - The queries should not be included in Paper 2. This means you cannot simiply modify some parameters of the queries in paper 2. Instead, you need to design queries that have different descriptions and semantics.
