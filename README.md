@@ -65,12 +65,14 @@ For more details about these three schemas of Unibench, please read Paper 2 in t
   Since AgensGraph 2.5.0 is based on PostgresSQL 11.11, so you may refer to the documentation of version 11.
 
 - **4. Transaction Processing**
-
   - [Introduction of transaction isolation levels in PostgreSQL](https://www.postgresql.org/docs/current/transaction-iso.html)
   - [Introduction of locks in PostgreSQL](https://www.postgresql.org/docs/14/explicit-locking.html)
   - [Introduction of deadlocks in PostgreSQL](https://www.postgresql.org/docs/14/explicit-locking.html#LOCKING-DEADLOCKS)
   - [Transaction tutorial page for PostgreSQL](https://www.postgresqltutorial.com/postgresql-transaction/)
 
+- **5. GitHub Repositories**
+  - [pg_dropcache extension](https://github.com/zilder/pg_dropcache)
+  - [Query Examples](https://github.com/big-unibo/m3d/tree/master/workload)
 
 ## **Exercises (20 points)**
 
@@ -173,7 +175,7 @@ pg_restore -d unibench_m3d -U agens -O -w -v /home/dw/m3d.dmp
 
 **Notice:** You may see some errors about the <font color=red>pg_dropcache</font> EXTENSION, just ignore these errors because pg_dropcache is only an extension of PostgreSQL for invalidating shared_buffers cache, so it does not affect the imported results.
 
-After importing the dataset, please complete the following 5 questions: Q1-Q5. For each question, you need to write three kinds of queries (FR, NR, and M3D) to answer the same question. Make sure that the three queries for the same question can get the same results. 
+After importing the dataset, please complete the following 5 questions: Q1-Q5. For each question, you need to write three kinds of queries (FR, NR, and M3D) to answer the same question. Make sure that the three queries for the same question can get the same results. Remember to set the graph_path (SET graph_path = unibench_graph) before performing Cypher queries on the graph.
 - FR: Full-Relational query is based on the FR schema;
 - NR: Non-Relational query is based on the NR schema;
 - M3D: Multi-Model Multidimensional query is based on the M3D schema.
@@ -192,8 +194,6 @@ Please read paper 2 and refer to this [Github](https://github.com/big-unibo/m3d)
 
 **Q5:** Total price by vendorname for the top 3 customers, order by vendorname.
 
-
-**Tips:** Remember to set the graph_path (SET graph_path = unibench_graph) before performing Cypher queries on the graph.
 
 
 ## **(Optional) Part3: Bonus of Multi-Model OLAP Analysis (Maximum: 5 points)**
