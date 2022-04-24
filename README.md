@@ -152,7 +152,7 @@ Consider a situation where the balance of AA's account (id=1) is initially 100 a
 
 
 
-## **Part2: Multi-Model OLAP Analysis (Total: 15 points)**
+## **Part2: Multi-Model OLAP Analysis (15 points)**
 
 
 Import the downloaded file "m3d.dmp" into AgensGraph using pg_restore command. Refer to this link about [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) command.
