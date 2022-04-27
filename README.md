@@ -3,8 +3,8 @@
 **This repository contains the instructions of the second hands-on session in our DW&BI course.**
 
 ## **Recording Video**
-[Hands-on Session 2 of Data Warehousing and Business Intelligence Course](https://www.youtube.com/watch?v=IHAsgTs15RY)
-[Common Problems of Hands-on Session 2](https://www.youtube.com/watch?v=0xz0oznHNuo)
+- [Hands-on Session 2 of Data Warehousing and Business Intelligence Course](https://www.youtube.com/watch?v=IHAsgTs15RY)
+- [Common Problems of Hands-on Session 2](https://www.youtube.com/watch?v=0xz0oznHNuo)
 
 
 ## **Learning Objectives**
