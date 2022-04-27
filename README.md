@@ -23,11 +23,11 @@ and then install it based on the installation guide.
 
 - **Linux system**: Download the [installer](https://bitnine.net/agensgraph-2-5-0-community-linux/) and then install it based on the installation guide.
 
-- **Installation Guide**: Download the zip file from this [link](https://bitnine.net/agensgraph-2-5-0-installation-guide/), then unizp this file and you will get two pdf fiels:
+- **Installation Guide**: Download the zip file from this [link](https://bitnine.net/agensgraph-2-5-0-installation-guide/), then unizp this file and you will get two pdf files:
   - agens_graph_linux_installation_guide_html.pdf
   - agens_graph_windows_installation_guide_html.pdf
 
-MacOS users need to build from the source code to install the AgensGraph.
+MacOS users need to build from the source code to install AgensGraph.
 
 - **MacOS system**: Please refer to this [video](https://www.youtube.com/watch?v=o9bKSAVk1KQ) to install AgensGraph in MacOS.
   
