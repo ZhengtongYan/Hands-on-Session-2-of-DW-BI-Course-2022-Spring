@@ -4,11 +4,12 @@
 
 ## **Recording Video**
 [Hands-on Session 2 of Data Warehousing and Business Intelligence Course](https://www.youtube.com/watch?v=IHAsgTs15RY)
+[Common Problems of Hands-on Session 2](https://www.youtube.com/watch?v=0xz0oznHNuo)
 
 
 ## **Learning Objectives**
 Gain hands-on experience in transaction processing and multi-model OLAP analysis using AgensGraph.
-- Learn how to perform transaction processing in AgensGraph;
+- Learn how to perform transaction processing in AgensGraph.
 - Learn how to write multi-model OLAP queries in AgensGraph.
 
 
@@ -77,7 +78,7 @@ For more details about these three schemas of Unibench, please read Paper 2 in t
 - **6. Set Environment Variables:** If you have errors like "command not found" when running commands such as "agens" and "ag_ctl", you need to add the bin folder of the AgensGraph installation directory into the environment variables. For example, in my computer, the directory is "/home/agens/AgensGraph-2.5.0/bin". You need to change this diectory based on your installation.
   - [How to add environment variables in Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
   - [How to set environment variables in Ubuntu](https://help.ubuntu.com/community/EnvironmentVariables)
-  - [How to eet environment variables in MacOS](https://phoenixnap.com/kb/set-environment-variable-mac)
+  - [How to set environment variables in MacOS](https://phoenixnap.com/kb/set-environment-variable-mac)
 
 ## **Exercises (20 points)**
 
