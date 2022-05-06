@@ -171,6 +171,7 @@ Consider a situation where the balance of AA's account (id=1) is initially 100 a
 
 
 ## **Part2: Multi-Model OLAP Analysis (15 points)**
+&#x1F4D8;If you use Docker to install the AgensGraph, please refer to [Installation of AgensGraph in Docker for Windows and MacOS.pdf](https://github.com/ZhengtongYan/Hands-on-Session-2-of-DW-BI-Course/blob/main/Installation%20of%20AgensGraph%20in%20Docker%20for%20Windows%20and%20MacOS.pdf) about how to importing the dataset.
 
 
 Import the downloaded file "m3d.dmp" into AgensGraph using pg_restore command. Refer to this link about [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) command.
