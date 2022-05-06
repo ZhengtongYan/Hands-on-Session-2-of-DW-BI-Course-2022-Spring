@@ -1,10 +1,11 @@
 # **Hands-on Session 2: Transaction Processing and Multi-Model OLAP Analysis with AgensGraph**
 
-**This repository contains the instructions of the second hands-on session in our DW&BI course.**
+**This repository contains the instructions for the second hands-on session in our DW&BI course.**
 
 ## **Recording Video**
 - [Hands-on Session 2 of Data Warehousing and Business Intelligence Course](https://www.youtube.com/watch?v=IHAsgTs15RY)
 - [Common Problems of Hands-on Session 2](https://www.youtube.com/watch?v=0xz0oznHNuo)
+- [How to Install AgensGraph in Docker on Windows and MacOS](https://www.youtube.com/watch?v=PGCFzxvPuQI)
 
 
 ## **Learning Objectives**
@@ -15,10 +16,13 @@ Gain hands-on experience in transaction processing and multi-model OLAP analysis
 
 ## **Software Requirements**
 
-You need AgensGraph database to complete the exercies. 
+You need AgensGraph database to complete the exercises. 
 
+Some students who use Windows and macOS systems said that they have some problems when directly installing and using AgensGraph. **So, if you use Windows or macOS systems, I recommend you install AgensGraph using Docker.** Please refer to the following pdf document and Video to install AgensGraph with Docker:
+- [Installation of AgensGraph in Docker for Windows and MacOS.pdf](https://github.com/ZhengtongYan/Hands-on-Session-2-of-DW-BI-Course/blob/main/Installation%20of%20AgensGraph%20in%20Docker%20for%20Windows%20and%20MacOS.pdf)
+- [How to Install AgensGraph in Docker on Windows and MacOS](https://www.youtube.com/watch?v=PGCFzxvPuQI)
 
-Windows and Linux users can directly download the installers and then install them based on the installation guide.
+You can also install AgensGraph without using Docker (**This installation may have some problems**). Windows and Linux users can directly download the installers and then install them based on the installation guide.
 
 - **Windows system**: Download the [installer](https://bitnine.net/agensgraph-2-5-0-community-windows/)
 and then install it based on the installation guide.
@@ -29,21 +33,9 @@ and then install it based on the installation guide.
   - agens_graph_linux_installation_guide_html.pdf
   - agens_graph_windows_installation_guide_html.pdf
 
-MacOS users need to build from the source code to install AgensGraph.
-- **MacOS system**: Please refer to this [video](https://www.youtube.com/watch?v=o9bKSAVk1KQ) to install AgensGraph in MacOS.
+MacOS users need to build from the source code to install AgensGraph. 
+- **MacOS system**: Please refer to this [video](https://www.youtube.com/watch?v=o9bKSAVk1KQ) to build and install AgensGraph in MacOS. **This installation approach is complicated, so I recommend macOS users to install AgensGraph with Docker.**
 
-&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;
-
-**Additional information updated on 2022.05.06.** 
-
-Some students who use Windows and MacOS system said that they have some problems when installing and using AgensGraph. 
-
-**So if you use Windows or MacOS systems, I recommend you install AgensGraph using Docker.** 
-
-Please refer to the following pdf document to install AgensGraph with Docker:
-- [Installation of AgensGraph in Docker for Windows and MacOS.pdf](https://github.com/ZhengtongYan/Hands-on-Session-2-of-DW-BI-Course/blob/main/Installation%20of%20AgensGraph%20in%20Docker%20for%20Windows%20and%20MacOS.pdf)
-
-&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;  
 
 ## **Download the Dataset**
 
@@ -143,7 +135,7 @@ Consider a situation where the balance of AA's account (id=1) is initially 100 a
 
 **2. Locks and Deadlock**
 
-（1）What kinds of locks do the following two transactions try to generate in AgensGraph? Whether the two locks are conflicting or not? Will the records in the *accounts* table be deleted by the truncate command? (0.5 point)
+（1）What kinds of locks do the following two transactions try to generate in AgensGraph? Are the two locks conflicting or not? Will the records in the *accounts* table be deleted by the truncate command? (0.5 point)
 
 | Transaction 1 | Transaction 2| 
 | -------- | -------- | 
@@ -171,10 +163,12 @@ Consider a situation where the balance of AA's account (id=1) is initially 100 a
 
 
 ## **Part2: Multi-Model OLAP Analysis (15 points)**
-&#x1F4D8;If you use Docker to install the AgensGraph, please refer to [Installation of AgensGraph in Docker for Windows and MacOS.pdf](https://github.com/ZhengtongYan/Hands-on-Session-2-of-DW-BI-Course/blob/main/Installation%20of%20AgensGraph%20in%20Docker%20for%20Windows%20and%20MacOS.pdf) about how to importing the dataset.
+&#x1F4D8; If you use Docker to install the AgensGraph, please refer to the following two materials about how to importing the dataset:
+ - [Installation of AgensGraph in Docker for Windows and MacOS.pdf](https://github.com/ZhengtongYan/Hands-on-Session-2-of-DW-BI-Course/blob/main/Installation%20of%20AgensGraph%20in%20Docker%20for%20Windows%20and%20MacOS.pdf)
+ - [How to Install AgensGraph in Docker on Windows and MacOS](https://www.youtube.com/watch?v=PGCFzxvPuQI) 
 
 
-Import the downloaded file "m3d.dmp" into AgensGraph using pg_restore command. Refer to this link about [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) command.
+If you do not use Docker, you can refer the following steps to import the downloaded file "m3d.dmp" into AgensGraph using pg_restore command. Refer to this link about [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) command.
 
 **Step 1:** In AgensGraph, create a database called "unibench_m3d" and a graph called "unibench_graph", and set the graph_path. The commands are as follows:
 ```SQL
