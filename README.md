@@ -17,6 +17,7 @@ Gain hands-on experience in transaction processing and multi-model OLAP analysis
 
 You need AgensGraph database to complete the exercies. 
 
+
 Windows and Linux users can directly download the installers and then install them based on the installation guide.
 
 - **Windows system**: Download the [installer](https://bitnine.net/agensgraph-2-5-0-community-windows/)
@@ -29,9 +30,20 @@ and then install it based on the installation guide.
   - agens_graph_windows_installation_guide_html.pdf
 
 MacOS users need to build from the source code to install AgensGraph.
-
 - **MacOS system**: Please refer to this [video](https://www.youtube.com/watch?v=o9bKSAVk1KQ) to install AgensGraph in MacOS.
-  
+
+&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;
+
+**Additional information updated on 2022.05.06.** 
+
+Some students who use Windows and MacOS system said that they have some problems when installing and using AgensGraph. 
+
+**So if you use Windows or MacOS systems, I recommend you install AgensGraph using Docker.** 
+
+Please refer to the following pdf document to install AgensGraph with Docker:
+- [Installation of AgensGraph in Docker for Windows and MacOS.pdf](https://github.com/ZhengtongYan/Hands-on-Session-2-of-DW-BI-Course/blob/main/Installation%20of%20AgensGraph%20in%20Docker%20for%20Windows%20and%20MacOS.pdf)
+
+&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;&#x1F534;  
 
 ## **Download the Dataset**
 
